@@ -1,6 +1,6 @@
 {
   "name": "watch-rx-ts",
-  "version": "0.0.0",
+  "version": "1.2.0",
   "description": "Typescript implementation of watch-rx using latest chokidar",
   "main": "index.js",
   "scripts": {
