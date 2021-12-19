@@ -1,6 +1,6 @@
 {
   "name": "watch-rx-ts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Typescript implementation of watch-rx using latest chokidar",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:schaze/node-watch-rx-ts.git"
+    "url": "https://github.com/schaze/node-watch-rx-ts.git"
   },
+  "homepage": "https://github.com/schaze/node-watch-rx-ts#README.md",
   "files": [
     "*"
   ],
