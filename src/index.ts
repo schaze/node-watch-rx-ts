@@ -8,9 +8,9 @@ import { watch, WatchOptions } from "chokidar";
 export const readFileRx: (path: string, encoding: BufferEncoding) => Observable<string> = bindNodeCallback(
     (path: string, encoding: BufferEncoding, callback: (error: Error, data: string) => void) => readFile(path, { encoding }, callback));
 
-export function watchRx(paths: string | ReadonlyArray<string>, options: WatchOptions): Observable<GlobResultFile> {
-    options = options || {}
-    const basedir = options.cwd || process.cwd()
+export function watchRx(paths: string | ReadonlyArray<string>, options: WatchOptions = {}): Observable<GlobResultFile> {
+    options = { cwd: process.cwd(), ...options }
+    const basedir = options.cwd;
 
     return new Observable((observer) => {
         let isFinished = false
